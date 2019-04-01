@@ -1,0 +1,35 @@
+.item_gallery {
+    padding: 10px 0 20px;
+    background-image: url(/admin/images/bg_black.png);
+    margin-bottom: 25px;
+}
+
+.item_img {
+    position: relative;
+    text-align: center;
+    height: 490px;
+    background: url(images/ajax-loader.gif) no-repeat center 49%;
+}
+
+.item_img img {
+    max-width: 710px;
+}
+
+.item_thumbs {
+    text-align: center;
+}
+
+.item_thumbs a {
+    margin: 0 10px 10px 0;
+}
+
+.item_thumbs img {
+    width: 90px;
+    padding: 4px;
+    border: 0;
+    background: url(/admin/images/bg_black.png);
+}
+
+.item_thumbs a:hover img, .item_thumbs a.active img {
+    background: url(/admin/images/bg_black60.png);
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Кофеварка</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="styledform.css">
+  </head>
+  <body>
+
+    <h1>Кофеварка</h1>
+    <h2>Заполни форму - получи кофе</h2>
+
+    <form action="function" method="post">
+	<div class="tableRow">
+		<p>
+          Выбери бобы:
+		</p>
+		<p>
+            <select name="beans">
+              <option value="House Blend">Домашней жарки</option>
+              <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+              <option value="Guatemala">Organic Guatemala</option>
+              <option value="Kenya">Kenya</option>
+            </select>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> Тип: </p>
+		<p>
+            <input type="radio" name="beantype" value="whole"> Цельный<br>
+            <input type="radio" name="beantype" value="ground" checked> 
+            Молотый
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> Колтчество сумок: </p>
+		<p> <input type="number" name="bags" min="1" max="10"> </p>
+	</div>
+	<div class="tableRow label">
+		<p> Доставка к: </p>
+		<p> <input type="date" name="date"> </p>
+	</div>
+	<div class="tableRow">
+		<p> Дополнительно: </p>
+		<p>
+            <input type="checkbox" name="extras[]" value="giftwrap"> Подарочная обертка<br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            Включить каталог в заказ
+		</p>
+	</div>
+	<div class="tableRow">
+		<p class="heading"> Доставить к </p>
+		<p></p>
+	</div>
+	<div class="tableRow">
+		<p> Имя: </p>
+		<p> <input type="text" name="name" value="" placeholder="Buckaroo Banzai" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Адресс: </p>
+		<p> <input type="text" name="address" value="" placeholder="Banzai Institute" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Город: </p>
+		<p> <input type="text" name="city" value="" placeholder="Los Angeles" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Регион: </p>
+		<p> <input type="text" name="state" value="" placeholder="CA" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Индекс: </p>
+		<p> <input type="text" name="zip" value="" placeholder="90050" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Телефон: </p>
+		<p> <input type="tel" name="phone" value="" placeholder="310-555-1212" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Отзывы: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="Order Now"> </p>
+	</div>
+    </form>
+  </body>
+</html>
+

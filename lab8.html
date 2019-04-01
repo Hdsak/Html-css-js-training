@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <!-- Подключаем jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+  <!-- Скрипт плавного открытия и закрытия блока -->
+  <script type='text/javascript'> 
+    $(document).ready(function() { 
+      $("A#trigger").toggle(function() { 
+        // Отображаем скрытый блок 
+        $("DIV#box").fadeIn(); // fadeIn - плавное появление
+        return false; // не производить переход по ссылке
+      },  
+      function() { 
+        // Скрываем блок 
+        $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение 
+        return false; // не производить переход по ссылке
+      }); // end of toggle() 
+    }); // end of ready() 
+  </script> 
+
+</head> 
+<body> 
+
+  <a href='#' id='trigger'>Открыть/скрыть информацию</a> <!-- Всё происходит при нажатии на ссылку -->
+  <div id='box' style='display: none;padding:10px;background-color:#f1f1f1;margin:10px;width:210px;'>Содержимое скрытого блока</div> 
+
+</body> 
+</html>
